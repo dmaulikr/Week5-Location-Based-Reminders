@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B0A2575A-6FBC-46FB-ABF0-597E2C03FBBE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CE1F6F34F470818092C4125F90D1D68C70260A56</key>
+		<string>https://github.com/jmn756/Week5-Location-Based-Reminders.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Week5-LocationBasedReminders/Week5-LocationBasedReminders.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CE1F6F34F470818092C4125F90D1D68C70260A56</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jmn756/Week5-Location-Based-Reminders.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CE1F6F34F470818092C4125F90D1D68C70260A56</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE1F6F34F470818092C4125F90D1D68C70260A56</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Week5-Location-Based-Reminders</string>
+		</dict>
+	</array>
+</dict>
+</plist>
