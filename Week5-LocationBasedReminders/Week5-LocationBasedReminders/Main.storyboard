@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="A9f-TG-cRa">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yrb-Re-LTN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="560"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="560" id="h4V-J0-EQL"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEU-TS-Qap">
+                                <rect key="frame" x="16" y="562" width="75" height="30"/>
+                                <state key="normal" title="Hometown">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p6h-RN-2Jh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCc-C6-pjk">
+                                <rect key="frame" x="260.5" y="562" width="79" height="30"/>
+                                <state key="normal" title="Alma Mater">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="midButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0F6-t8-gjB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyg-eF-Smd">
+                                <rect key="frame" x="482" y="562" width="97" height="30"/>
+                                <state key="normal" title="Current Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fy8-g4-nyJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yrb-Re-LTN" firstAttribute="centerX" secondItem="fCc-C6-pjk" secondAttribute="centerX" id="7Gr-uq-5mt"/>
+                            <constraint firstItem="Fyg-eF-Smd" firstAttribute="baseline" secondItem="fCc-C6-pjk" secondAttribute="baseline" id="JB3-rI-Hlf"/>
+                            <constraint firstItem="Fyg-eF-Smd" firstAttribute="top" secondItem="Yrb-Re-LTN" secondAttribute="bottom" constant="2" id="U9X-UC-nhj"/>
+                            <constraint firstItem="Fyg-eF-Smd" firstAttribute="baseline" secondItem="SEU-TS-Qap" secondAttribute="baseline" id="Y2U-Op-4wq"/>
+                            <constraint firstItem="Yrb-Re-LTN" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="egX-Cb-Z1z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fyg-eF-Smd" secondAttribute="trailing" constant="5" id="fLn-ay-HBr"/>
+                            <constraint firstItem="Yrb-Re-LTN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="hiR-D6-wQi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yrb-Re-LTN" secondAttribute="trailing" constant="-16" id="vhZ-iZ-Nns"/>
+                            <constraint firstItem="SEU-TS-Qap" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="zCF-E3-Igl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BbN-CX-8pX">
+                        <barButtonItem key="rightBarButtonItem" title="Get User's Location" id="aG0-hd-KU2">
+                            <connections>
+                                <action selector="userLocButton:" destination="vXZ-lx-hvc" id="mHs-Ds-VX0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="Yrb-Re-LTN" id="Bxm-WG-OcH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sps-5D-spH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A9f-TG-cRa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9UD-in-JZS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Ug3-iR-cOM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mau-mP-bfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="982"/>
+        </scene>
+    </scenes>
+</document>
