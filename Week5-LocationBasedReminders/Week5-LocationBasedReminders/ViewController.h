@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController <CLLocationManagerDelegate> {
-  CLLocationManager *locationManager;
-}
+@interface ViewController : UIViewController <CLLocationManagerDelegate, UIAlertViewDelegate> {
+  }
 - (void)getUserLocation;
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations;
+- (void)presentLocationServicesAlert;
 
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations;
+- (void)queryForRegions;
 @end
 

@@ -28,10 +28,14 @@
 		B00641591B965F1B00E29B41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00641581B965F1B00E29B41 /* CoreGraphics.framework */; };
 		B006415B1B965F4B00E29B41 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B006415A1B965F4B00E29B41 /* QuartzCore.framework */; };
 		B006415D1B965F6500E29B41 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B006415C1B965F6500E29B41 /* Security.framework */; };
-		B006415F1B965F6D00E29B41 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B006415E1B965F6D00E29B41 /* StoreKit.framework */; };
 		B00641611B965F8800E29B41 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00641601B965F8800E29B41 /* SystemConfiguration.framework */; };
 		B00641631B965F9B00E29B41 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B00641621B965F9B00E29B41 /* libz.dylib */; };
 		B00641651B965FAB00E29B41 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B00641641B965FAB00E29B41 /* libsqlite3.dylib */; };
+		B00641681B98A52600E29B41 /* AddReminderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00641671B98A52600E29B41 /* AddReminderDetailViewController.m */; };
+		B074D7501B98AADE006EFB37 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B074D74F1B98AADE006EFB37 /* LoginViewController.m */; };
+		B074D7531B98C7C3006EFB37 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = B074D7521B98C7C3006EFB37 /* Constants.m */; };
+		B074D7561B99FE46006EFB37 /* Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = B074D7551B99FE46006EFB37 /* Keys.m */; };
+		B074D7591B9CE4BB006EFB37 /* Reminder.m in Sources */ = {isa = PBXBuildFile; fileRef = B074D7581B9CE4BB006EFB37 /* Reminder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +76,19 @@
 		B00641581B965F1B00E29B41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B006415A1B965F4B00E29B41 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B006415C1B965F6500E29B41 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		B006415E1B965F6D00E29B41 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B00641601B965F8800E29B41 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B00641621B965F9B00E29B41 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		B00641641B965FAB00E29B41 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B00641661B98A52600E29B41 /* AddReminderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReminderDetailViewController.h; sourceTree = "<group>"; };
+		B00641671B98A52600E29B41 /* AddReminderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReminderDetailViewController.m; sourceTree = "<group>"; };
+		B074D74E1B98AADE006EFB37 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B074D74F1B98AADE006EFB37 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B074D7511B98C7C3006EFB37 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		B074D7521B98C7C3006EFB37 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		B074D7541B99FE46006EFB37 /* Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = "<group>"; };
+		B074D7551B99FE46006EFB37 /* Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keys.m; sourceTree = "<group>"; };
+		B074D7571B9CE4BB006EFB37 /* Reminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reminder.h; sourceTree = "<group>"; };
+		B074D7581B9CE4BB006EFB37 /* Reminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reminder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +101,6 @@
 				B00641651B965FAB00E29B41 /* libsqlite3.dylib in Frameworks */,
 				B00641631B965F9B00E29B41 /* libz.dylib in Frameworks */,
 				B00641611B965F8800E29B41 /* SystemConfiguration.framework in Frameworks */,
-				B006415F1B965F6D00E29B41 /* StoreKit.framework in Frameworks */,
 				B006415D1B965F6500E29B41 /* Security.framework in Frameworks */,
 				B006415B1B965F4B00E29B41 /* QuartzCore.framework in Frameworks */,
 				B00641591B965F1B00E29B41 /* CoreGraphics.framework in Frameworks */,
@@ -178,6 +190,12 @@
 		B006413C1B94F80B00E29B41 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B074D7571B9CE4BB006EFB37 /* Reminder.h */,
+				B074D7581B9CE4BB006EFB37 /* Reminder.m */,
+				B074D7541B99FE46006EFB37 /* Keys.h */,
+				B074D7551B99FE46006EFB37 /* Keys.m */,
+				B074D7511B98C7C3006EFB37 /* Constants.h */,
+				B074D7521B98C7C3006EFB37 /* Constants.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -193,6 +211,10 @@
 		B006413E1B94F81B00E29B41 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B074D74E1B98AADE006EFB37 /* LoginViewController.h */,
+				B074D74F1B98AADE006EFB37 /* LoginViewController.m */,
+				B00641661B98A52600E29B41 /* AddReminderDetailViewController.h */,
+				B00641671B98A52600E29B41 /* AddReminderDetailViewController.m */,
 				B006411D1B94F80000E29B41 /* ViewController.h */,
 				B006411E1B94F80000E29B41 /* ViewController.m */,
 			);
@@ -206,7 +228,6 @@
 				B00641641B965FAB00E29B41 /* libsqlite3.dylib */,
 				B00641621B965F9B00E29B41 /* libz.dylib */,
 				B00641601B965F8800E29B41 /* SystemConfiguration.framework */,
-				B006415E1B965F6D00E29B41 /* StoreKit.framework */,
 				B006415C1B965F6500E29B41 /* Security.framework */,
 				B006415A1B965F4B00E29B41 /* QuartzCore.framework */,
 				B00641581B965F1B00E29B41 /* CoreGraphics.framework */,
@@ -272,7 +293,14 @@
 				TargetAttributes = {
 					B00641121B94F80000E29B41 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 9PNF8T74V8;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
@@ -328,9 +356,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B074D7561B99FE46006EFB37 /* Keys.m in Sources */,
 				B006411F1B94F80000E29B41 /* ViewController.m in Sources */,
 				B006411C1B94F80000E29B41 /* AppDelegate.m in Sources */,
+				B074D7591B9CE4BB006EFB37 /* Reminder.m in Sources */,
 				B00641191B94F80000E29B41 /* main.m in Sources */,
+				B00641681B98A52600E29B41 /* AddReminderDetailViewController.m in Sources */,
+				B074D7501B98AADE006EFB37 /* LoginViewController.m in Sources */,
+				B074D7531B98C7C3006EFB37 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
